@@ -1,0 +1,152 @@
+/* Configuraciones generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Sección de Bienvenida (Hero) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Secciones de contenido */
+.content-section {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section h2 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.content-section h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #2a5298;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grey-bg {
+    background-color: #f0f2f5;
+    max-width: 100%;
+}
+
+/* Etiquetas de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background-color: #2a5298;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Lista de gustos */
+ul {
+    list-style-position: inside;
+    max-width: 400px;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
